@@ -1,0 +1,2 @@
+D:\Qt\Tools\mingw491_32\bin\ar.exe cq ..\..\lib\libopencv_photo_pch_dephelp.a  CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.obj
+D:\Qt\Tools\mingw491_32\bin\ranlib.exe ..\..\lib\libopencv_photo_pch_dephelp.a

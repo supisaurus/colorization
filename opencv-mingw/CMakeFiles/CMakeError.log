@@ -1,0 +1,94 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Qt/Tools/mingw491_32/bin/mingw32-make.exe" "cmTryCompileExec3539445984/fast"
+D:/Qt/Tools/mingw491_32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3539445984.dir\build.make CMakeFiles/cmTryCompileExec3539445984.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp'
+D:\CMake\bin\cmake.exe -E cmake_progress_report D:\colorization\opencv-mingw\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3539445984.dir/TestEndianess.c.obj
+D:\Qt\Tools\mingw491_32\bin\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -msse -msse2 -mfpmath=sse -ffunction-sections  -O3 -DNDEBUG   -o CMakeFiles\cmTryCompileExec3539445984.dir\TestEndianess.c.obj   -c D:\colorization\opencv-mingw\CMakeFiles\CMakeTmp\TestEndianess.c
+Linking C executable cmTryCompileExec3539445984.exe
+D:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec3539445984.dir\link.txt --verbose=1
+D:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTryCompileExec3539445984.dir/objects.a
+D:\Qt\Tools\mingw491_32\bin\ar.exe cr CMakeFiles\cmTryCompileExec3539445984.dir/objects.a @CMakeFiles\cmTryCompileExec3539445984.dir\objects1.rsp
+D:\Qt\Tools\mingw491_32\bin\gcc.exe     -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -msse -msse2 -mfpmath=sse -ffunction-sections  -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTryCompileExec3539445984.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3539445984.exe -Wl,--out-implib,libcmTryCompileExec3539445984.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec3539445984.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Qt/Tools/mingw491_32/bin/mingw32-make.exe" "cmTryCompileExec867561060/fast"
+D:/Qt/Tools/mingw491_32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec867561060.dir\build.make CMakeFiles/cmTryCompileExec867561060.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp'
+D:\CMake\bin\cmake.exe -E cmake_progress_report D:\colorization\opencv-mingw\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec867561060.dir/CheckFunctionExists.c.obj
+D:\Qt\Tools\mingw491_32\bin\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -msse -msse2 -mfpmath=sse -ffunction-sections -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG   -o CMakeFiles\cmTryCompileExec867561060.dir\CheckFunctionExists.c.obj   -c D:\CMake\share\cmake-3.2\Modules\CheckFunctionExists.c
+D:\CMake\share\cmake-3.2\Modules\CheckFunctionExists.c:3:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+Linking C executable cmTryCompileExec867561060.exe
+D:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec867561060.dir\link.txt --verbose=1
+D:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTryCompileExec867561060.dir/objects.a
+D:\Qt\Tools\mingw491_32\bin\ar.exe cr CMakeFiles\cmTryCompileExec867561060.dir/objects.a @CMakeFiles\cmTryCompileExec867561060.dir\objects1.rsp
+D:\Qt\Tools\mingw491_32\bin\gcc.exe     -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -msse -msse2 -mfpmath=sse -ffunction-sections -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTryCompileExec867561060.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec867561060.exe -Wl,--out-implib,libcmTryCompileExec867561060.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec867561060.dir\linklibs.rsp
+CMakeFiles\cmTryCompileExec867561060.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `jbg_newlen'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTryCompileExec867561060.dir\build.make:89: recipe for target 'cmTryCompileExec867561060.exe' failed
+mingw32-make.exe[1]: *** [cmTryCompileExec867561060.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp'
+makefile:116: recipe for target 'cmTryCompileExec867561060/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec867561060/fast] Error 2
+
+
+Determining if the function mmap exists failed with the following output:
+Change Dir: D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp
+
+Run Build Command:"D:/Qt/Tools/mingw491_32/bin/mingw32-make.exe" "cmTryCompileExec357240386/fast"
+D:/Qt/Tools/mingw491_32/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec357240386.dir\build.make CMakeFiles/cmTryCompileExec357240386.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp'
+D:\CMake\bin\cmake.exe -E cmake_progress_report D:\colorization\opencv-mingw\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec357240386.dir/CheckFunctionExists.c.obj
+D:\Qt\Tools\mingw491_32\bin\gcc.exe   -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -msse -msse2 -mfpmath=sse -ffunction-sections -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG   -o CMakeFiles\cmTryCompileExec357240386.dir\CheckFunctionExists.c.obj   -c D:\CMake\share\cmake-3.2\Modules\CheckFunctionExists.c
+D:\CMake\share\cmake-3.2\Modules\CheckFunctionExists.c:3:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+Linking C executable cmTryCompileExec357240386.exe
+D:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec357240386.dir\link.txt --verbose=1
+D:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTryCompileExec357240386.dir/objects.a
+D:\Qt\Tools\mingw491_32\bin\ar.exe cr CMakeFiles\cmTryCompileExec357240386.dir/objects.a @CMakeFiles\cmTryCompileExec357240386.dir\objects1.rsp
+D:\Qt\Tools\mingw491_32\bin\gcc.exe     -fsigned-char -mstackrealign -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -fomit-frame-pointer -msse -msse2 -mfpmath=sse -ffunction-sections -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTryCompileExec357240386.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec357240386.exe -Wl,--out-implib,libcmTryCompileExec357240386.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec357240386.dir\linklibs.rsp
+CMakeFiles\cmTryCompileExec357240386.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `mmap'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTryCompileExec357240386.dir\build.make:89: recipe for target 'cmTryCompileExec357240386.exe' failed
+mingw32-make.exe[1]: *** [cmTryCompileExec357240386.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/colorization/opencv-mingw/CMakeFiles/CMakeTmp'
+makefile:116: recipe for target 'cmTryCompileExec357240386/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec357240386/fast] Error 2
+
+

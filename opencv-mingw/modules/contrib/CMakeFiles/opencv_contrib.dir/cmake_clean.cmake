@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/opencv_contrib.dir/src/adaptiveskindetector.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/ba.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/basicretinafilter.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/bowmsctrainer.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/chamfermatching.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/chowliutree.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/colormap.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/colortracker.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/contrib_init.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/detection_based_tracker.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/facerec.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/featuretracker.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/fuzzymeanshifttracker.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/gencolors.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/hybridtracker.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/imagelogpolprojection.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/inputoutput.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/lda.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/logpolar_bsm.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/magnoretinafilter.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/octree.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/openfabmap.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/parvoretinafilter.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/polyfit.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/retina.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/retinacolor.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/retinafilter.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/rgbdodometry.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/selfsimilarity.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/spinimages.cpp.obj"
+  "CMakeFiles/opencv_contrib.dir/src/stereovar.cpp.obj"
+  "../../bin/libopencv_contrib249.pdb"
+  "../../bin/libopencv_contrib249.dll"
+  "../../lib/libopencv_contrib249.dll.a"
+  "../../bin/libopencv_contrib249.dll.manifest"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/opencv_contrib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
