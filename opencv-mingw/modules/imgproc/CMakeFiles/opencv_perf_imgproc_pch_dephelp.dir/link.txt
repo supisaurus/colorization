@@ -1,2 +1,0 @@
-D:\Qt\Tools\mingw491_32\bin\ar.exe cq ..\..\lib\libopencv_perf_imgproc_pch_dephelp.a  CMakeFiles/opencv_perf_imgproc_pch_dephelp.dir/opencv_perf_imgproc_pch_dephelp.cxx.obj
-D:\Qt\Tools\mingw491_32\bin\ranlib.exe ..\..\lib\libopencv_perf_imgproc_pch_dephelp.a

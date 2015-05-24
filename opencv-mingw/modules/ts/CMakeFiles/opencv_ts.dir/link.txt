@@ -1,2 +1,0 @@
-D:\Qt\Tools\mingw491_32\bin\ar.exe cq ..\..\lib\libopencv_ts249.a  CMakeFiles/opencv_ts.dir/src/gpu_perf.cpp.obj CMakeFiles/opencv_ts.dir/src/gpu_test.cpp.obj CMakeFiles/opencv_ts.dir/src/ts.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_func.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.obj CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.obj
-D:\Qt\Tools\mingw491_32\bin\ranlib.exe ..\..\lib\libopencv_ts249.a
