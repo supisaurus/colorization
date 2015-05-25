@@ -1,7 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QVector>
+#include <QImage>
 #include <QMainWindow>
+#include <QLabel>
+#include <opencv2/opencv.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -17,21 +21,27 @@ public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-public slots:
+private slots:
     void openImg();
+    void setColor();
+    void resetScribCall();
 
 protected:
     void initMenus();
     void initWidgets();
+    cv::Mat qImg2CV();
+    void cv2QImg(const cv::Mat &src);
+    QImage convertToGray(QImage *pInputImage);
 
     DrawingWidget *m_drawingWidget;
-    QMenu *m_fileMenu;
-        QAction *m_quitAction;
-        QAction *m_openImgAction;
-    QMenu *m_helpMenu;
-        QAction *m_whatsThisAction;
-        QAction *m_aboutAction;
+
+    QAction *m_quitAction;
+    QAction *m_resetAction;
+    QAction *m_openColorAction;
+    QAction *m_openImgAction;
+    QLabel *m_image;
     QImage *image;
+
 };
 
 #endif // MAINWINDOW_H
