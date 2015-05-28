@@ -14,10 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    drawingwidget.cpp
+    drawingwidget.cpp \
+    coloringwidget.cpp
 
 HEADERS  += mainwindow.h \
-    drawingwidget.h
+    drawingwidget.h \
+    coloringwidget.h \
+    pixelkdata.h
 
 INCLUDEPATH += D:\\colorization\\opencv-mingw\\install\\include
 LIBS += D:\\colorization\\opencv-mingw\\install\\x64\\mingw\\bin\\libopencv_core249.dll

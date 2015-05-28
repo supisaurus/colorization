@@ -18,15 +18,15 @@ class DrawingWidget: public QWidget {
         ~DrawingWidget();
         void resetScribble();
         void setScribColor(QColor ncolor);
+        QVector<cv::Point2d> *scribbles;
+        QVector<QColor> *scribblecolors;
 
     protected:
         int m_x;
         int m_y;
 
         QColor *color;
-        QColor *localcolor;
-        QVector<cv::Point2d> *scribbles;
-        QVector<QColor> *scribblecolors;
+        QColor *localcolor;        
         void paintEvent(QPaintEvent *event);
         void mouseMoveEvent(QMouseEvent *event);
         MainWindow *m_mainWindow;

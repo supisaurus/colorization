@@ -24,7 +24,7 @@ void DrawingWidget::paintEvent(QPaintEvent *event) {
     for(int i = 0; i < scribbles->size(); i++) {
             if (scribbles->at(i).x >= 0 && scribbles->at(i).y >= 0){
                 *localcolor = scribblecolors->at(i);
-                QPen pen(*localcolor, 6, Qt::SolidLine);
+                QPen pen(*localcolor, 12, Qt::SolidLine);
                 painter.setPen(pen);
                 painter.drawPoint(scribbles->at(i).x,scribbles->at(i).y);
             }
